@@ -1,0 +1,16 @@
+
+my_module.show_text:
+  path: '/terms'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\HelloController::showContent'
+    _title: 'Terms and conditions'
+  requirements:
+    _permission: 'access content'
+
+my_module.config_form:
+  path: '/my_module/config'
+  defaults:
+    _form: '\Drupal\my_module\Form\MyConfigForm'
+    _title: 'My Custom Config Form'
+  requirements:
+    _permission: 'administer content'

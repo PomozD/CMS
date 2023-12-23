@@ -1,0 +1,2 @@
+login: admin
+password: 4Kgy8fs8sgVp:Li

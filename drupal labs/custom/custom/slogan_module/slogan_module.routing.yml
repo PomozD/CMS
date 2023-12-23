@@ -1,0 +1,16 @@
+
+slogan_module.show_text:
+  path: '/slogan_module/terms'
+  defaults:
+    _controller: '\Drupal\slogan_module\Controller\HelloController::showContent'
+    _title: 'Terms and conditions'
+  requirements:
+    _permission: 'access content'
+
+slogan_module.config_form:
+  path: '/slogan_module/config'
+  defaults:
+    _form: '\Drupal\slogan_module\Form\MyConfigForm'
+    _title: 'My Custom Config Form'
+  requirements:
+    _permission: 'administer content'
